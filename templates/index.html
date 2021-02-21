@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/css/style.css" class="rel">
+
+
+
+
+    <!-- bootstrap CSS -->
+
+
+
+    <!-- Custom fonts for this template -->
+
+    <title>Sorting Visualiser</title>
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+
+            <!-- this is responsible for generating the array,the array can have a min of 30 elements and can have a max of 200 elements!!-->
+
+            <!-- and the speed of the algorithm has 5 variants,level 1--level 5 -->
+
+
+            <div class="array-inputs">
+                <p>Size of the Array:</p>
+
+                <input type="range" id="a_size" min="20" max="150" step="1" value=90>
+
+                <p>Speed of the Algorithm:</p>
+                <input type="range" id="a_speed" min="1" max="5" step="1" value=4>
+
+                <button id="a_generate">Generate New Array</button>
+
+            </div>
+
+            <div class="header_right">
+
+
+                <p class="nav-heading">
+                    Sorting Visualizer
+                </p>
+
+
+
+
+
+
+
+                <!-- this div is responsible for the Selecting which Sorting algorithm one wants to select!! -->
+                <div class="algos">
+                    <button>Bubble</button>
+                    <button>Selection</button>
+                    <button>Insertion</button>
+                    <button>Merge</button>
+                    <button>Quick</button>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </nav>
+    </header>
+
+    <!-- This tag is for displaying the time taken by the sorting algorithm and details of it!! -->
+
+    <section>
+
+
+
+        <div id="Info_Cont1">
+
+        </div>
+
+        <!-- this is the most important div,as this will contain all the divs which we will generate during the Sorting process,i.e the Array will be full of div's,and we will be sorting those div's,so inorder to display the divs we need a container,and that is this one here !,and this will be rendered from JavaScript-->
+
+        <div id="array_container">
+
+
+        </div>
+
+        <div id="Info_Cont2">
+
+
+        </div>
+
+
+
+    </section>
+
+    <div class="header_right1" style="margin: auto;justify-content:center;align-items:center">
+
+        <a href="/" role="button" id="goback" style="margin: auto;justify-content:center;align-items:center">Go Back</a>
+
+    </div>
+
+
+
+
+
+
+    <!-- linking all the JS files required -->
+
+    <!-- firstly we have to load the main and the visualization files,after that the main algorithms file,inorder!!-->
+
+
+    <script src="../static/scripts/main.js"></script>
+    <script src="../static/scripts/visualization.js"></script>
+
+
+    <script src="../static/scripts/bubblesort.js"></script>
+    <script src="../static/scripts/selectionsort.js"></script>
+    <script src="../static/scripts/insertionsort.js"></script>
+    <script src="../static/scripts/mergesort.js"></script>
+    <script src="../static/scripts/quicksort.js"></script>
+    <script src="../static/scripts/heapsort.js"></script>
+
+
+
+
+</body>
+
+</html>
